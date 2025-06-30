@@ -33,11 +33,10 @@ proguard/
 # Android Studio captures folder
 captures/
 
-# Intellij - Don't require any .idea filder files.
-# Note: You may choose to allow a few files if you want: 
-# https://intellij-support.jetbrains.com/hc/en-us/articles/206544839-How-to-manage-projects-under-Version-Control-Systems
-*.iml
-**/.idea/
+# JetBrains IDEs
+.idea/*
+!.idea/copyright/
+!.idea/scopes/
 
 # Keystore files
 # Uncomment the following line if you do not want to check your keystore files in.

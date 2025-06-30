@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="Quick Permissions Kotlin" pattern="src[Quick-Permissions-Kotlin.quickpermissions-kotlin.main]:com.livinglifetechway.quickpermissionskotlin..*" />
+</component>
