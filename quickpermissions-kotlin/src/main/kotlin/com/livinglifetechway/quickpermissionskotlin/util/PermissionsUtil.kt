@@ -1,6 +1,5 @@
 package com.livinglifetechway.quickpermissionskotlin.util
 
-import android.app.Activity
 import android.content.Context
 import android.content.pm.PackageManager
 import androidx.core.app.ActivityCompat
@@ -11,12 +10,10 @@ import androidx.fragment.app.Fragment
  * methods.
  */
 object PermissionsUtil {
-    fun getDeniedPermissions(
-        permissions: Array<String>,
-        grantResults: IntArray
-    ): Array<String> = permissions.filterIndexed { index, _ ->
-        grantResults[index] == PackageManager.PERMISSION_DENIED
-    }.toTypedArray()
+    fun getDeniedPermissions(permissions: Array<String>, grantResults: IntArray): Array<String> =
+        permissions.filterIndexed { index, _ ->
+            grantResults[index] == PackageManager.PERMISSION_DENIED
+        }.toTypedArray()
 
     fun getPermanentlyDeniedPermissions(
         fragment: Fragment,

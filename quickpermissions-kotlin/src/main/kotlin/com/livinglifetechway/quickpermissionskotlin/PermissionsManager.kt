@@ -26,13 +26,12 @@ fun Context?.runWithPermissions(
  * Injects code to ask for permissions before executing any code that requires permissions
  * defined in the annotation
  */
+@Suppress("unused")
 fun Fragment?.runWithPermissions(
     vararg permissions: String,
     options: QuickPermissionsOptions = QuickPermissionsOptions(),
     callback: () -> Unit
-): Any? {
-    return runWithPermissionsHandler(this, permissions, callback, options)
-}
+): Any? = runWithPermissionsHandler(this, permissions, callback, options)
 
 private fun runWithPermissionsHandler(
     target: Any?,
